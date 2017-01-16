@@ -11,10 +11,6 @@
 
 import functools as ft
 
-def getFactors(n):
-    return set(ft.reduce(list.__add__,
-                ([i, n//i] for i in range(1, int(n**0.5) + 1) if n % i == 0)))
-
 def getPrimax(n):
     ret= {}
     primfac = []
@@ -34,7 +30,7 @@ def getPrimax(n):
         ret[i] = 0
     for i in primfac:
         ret[i] = ret[i] + 1
-        
+
     return ret
 
 print(getPrimax(20992335))
