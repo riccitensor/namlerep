@@ -4,7 +4,22 @@
 # Neural network
 
 import numpy as np
-import 
+import readImage as ri
+
+img = ri.readImage("data/pic_small.jpg")
+#print(img)
+
+X = [[0,0,0]]
+print("Before", X)
+#for i in range(0,img[1]):
+#    for j in range(0,img[2]):
+for i in range(0,1):
+    for j in range(0,2):
+        tmp = [[img[0][i,j][0],img[0][i,j][1],img[0][i,j][2]]]
+        print("Temp ", tmp)
+        np.append(tmp,X,axis=0)
+
+print("After ", X)
 
 # simple network by http://iamtrask.github.io/2015/07/12/basic-python-network/
 X = np.array([ [0,0,1],[0,1,1],[1,0,1],[1,1,1],[1,1,0] ])

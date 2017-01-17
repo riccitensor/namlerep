@@ -11,6 +11,3 @@ def readImage(filename):
     width = im.size[0]
     height = im.size[1]
     return (pix,width,height)
-
-img = readImage("data/pic_small.jpg")
-print(img)
