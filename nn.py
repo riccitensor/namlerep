@@ -19,6 +19,10 @@ for i in range(0,1):
         print("Temp ", tmp)
         np.append(tmp,X,axis=0)
 
+# TODO: Turn the Primax representation into the most unique color possible so that
+# we can see the difference in space. We would not see the difference in color,
+# so we need spatial exploration.
+
 print("After ", X)
 
 # simple network by http://iamtrask.github.io/2015/07/12/basic-python-network/
