@@ -1,7 +1,4 @@
-# Copyright (c) 2016-present, Deckard, SoCrowd GmbH.
-# All rights reserved.
-
-# Read images
+#Encoding numbers.
 
 from PIL import Image
 import math

@@ -1,6 +1,3 @@
-# Copyright (c) 2016-present, Deckard, SoCrowd GmbH.
-# All rights reserved.
-
 # Neural network
 
 import numpy as np

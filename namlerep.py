@@ -1,6 +1,3 @@
-# Copyright (c) 2016-present, Deckard, SoCrowd GmbH.
-# All rights reserved.
-
 # Represent a number as a primax.
 # Example of a primax:
 #
