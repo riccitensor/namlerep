@@ -47,7 +47,10 @@ print(getPrimax(20992335))
 
 #test for a list of primes
 for i in get_primes(5):
-    enc.encodePrimax(getPrimax(i), str(i) + ".bmp")
+    enc.encodePrimax(getPrimax(i), str(i) + ".bmp","dist")
 
-for i in range(0,10):
-    enc.encodePrimax(getPrimax(i), str(i) + ".bmp")
+for i in range(1000,1100):
+    pri = getPrimax(i)
+    print(pri)
+    #enc.encodePrimax(pri, str(i) + "-dist.bmp","dist")
+    enc.encodePrimax(pri, str(i) + "-bright.bmp","bright2")
