@@ -4,9 +4,9 @@
 # Neural network
 
 import numpy as np
-import readImage as ri
+import encoder as enc
 
-img = ri.readImage("data/pic_small.jpg")
+img = enc.readImage("data/pic_small.jpg")
 #print(img)
 
 X = [[0,0,0]]
