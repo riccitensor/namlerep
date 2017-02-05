@@ -47,6 +47,6 @@ def encodePrimax(arr,filename,mode):
                     pixels[i,j] = ( i,j,i*j % 255)
             else:
                 for j in range(img.size[1]):
-                    pixels[i,j] = (i,j,(j) % 255)
+                    pixels[i,j] = (round(sigmoid(i)*255),round(sigmoid(j)*255),round(sigmoid(i)*255))
         img.save(filename)
         #img.show()
